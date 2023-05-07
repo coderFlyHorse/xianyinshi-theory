@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // vue2 响应式原理
+        // 数据发生变动就触发该方法
+        function updateView() {
+            console.log("视图更新了")
+        }
+        // 数据
+        let data = {
+            name: "Mike",
+            age: "16",
+            info: {
+                profession: "student"
+            }
+        }
+
+        
+
+
+        // 观测数据 
+        observer(data)
+
+
+        // 数据发生了变化
+        data.name="John"
+    </script>
+</body>
+
+</html>
